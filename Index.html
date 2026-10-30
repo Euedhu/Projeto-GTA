@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--versao do html (nova 5)-->
+<!--dentro da TAG HTML fica todo sistema web (site)-->
+
+<html lang="pt-br">
+<!--cabeça (head) configurações gerais do site-->
+
+<head>
+    <!-- padrão caracteres-->
+    <meta charset="UTF-8">
+    <!-- compativel com celulares e computadores-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+    <!-- titulo do site -->
+    <title>Projeto GTA</title>
+</head>
+<!-- tudo que eu exergo no site-->
+
+<body>
+    <p class="nome">Lucia</p>
+    <img class="personagem" src="img/lucia.png">
+    <!-- soucer = origem (onde ela tá)-->
+    <div class="textos">
+
+        <p class="etiqueta">Selecione o seu personagem</p>
+        <h1>Não é só <br>um jogo</h1>
+        <p class="texto-apoio">Escolha uma lenda de dev city ou tire uma selfie e vire uma</p>
+
+        <div class="menu">
+
+            <img onclick="escolherpersonagem('lucia', 'img/lucia.png','#ff3cac')" class="avatar" src="img/lucia.png">
+            
+            <img onclick="escolherpersonagem('jason', 'img/jason.png', '#00b2c9')" class="avatar" src="img/jason.png">
+
+            <img onclick="escolherpersonagem('cj', 'img/cj.png', '#7ed37e')" class="avatar" src="img/cj.png">
+
+            <label class="voce">📸
+
+                <!-- file(arquivos) accept(aceita) image/todas 
+                 hidden (escondido)
+                 change (quando mudar algo, faça algo)
+                 this (isso aqui) - tudo que tem no input e enviar
+                -->
+                <input type="file" accept="image/*" hidden onchange="lerFoto(this)">
+            </label>
+        </div>
+    </div>
+
+</body>
+<script src="https://js.puter.com/v2/"></script>
+<script src="scripts.js"></script>
