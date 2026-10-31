@@ -44,7 +44,8 @@ html {
 
 .etiqueta {
     font-size: 26px;
-    color: #ffd319
+    color: #ffd319;
+    margin-bottom: 12px;
 }
 
 h1 {
